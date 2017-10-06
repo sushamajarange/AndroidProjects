@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Scrolling Text</string>
+    <string name="article_title">Article title</string>
+    <string name="Article_Subtitle">article_subtitle</string>
+    <string name="article_text">In	the	previous	task	you	created	the	Scrolling	Text	app	with	TextViews	for	an	article	title,	subtitle,	and	lengthy	article	text.
+You	also	included	a	web	link,	but	the	link	is	not	yet	active.	You	will	add	the	code	to	make	it	active.
+Also,	the	TextView	by	itself	can't	enable	users	to	scroll	the	article	text	to	see	all	of	it.	You	will	add	a	new	view	group	called
+	ScrollView	 	to	the	XML	layout	that	will	make	the	TextView	scrollable.
+    In	the	previous	task	you	created	the	Scrolling	Text	app	with	TextViews	for	an	article	title,	subtitle,	and	lengthy	article	text.
+You	also	included	a	web	link,	but	the	link	is	not	yet	active.	You	will	add	the	code	to	make	it	active.
+Also,	the	TextView	by	itself	can't	enable	users	to	scroll	the	article	text	to	see	all	of	it.	You	will	add	a	new	view	group	called
+	ScrollView	 	to	the	XML	layout	that	will	make	the	TextView	scrollable.
+    In	the	previous	task	you	created	the	Scrolling	Text	app	with	TextViews	for	an	article	title,	subtitle,	and	lengthy	article	text.
+You	also	included	a	web	link,	but	the	link	is	not	yet	active.	You	will	add	the	code	to	make	it	active.
+Also,	the	TextView	by	itself	can't	enable	users	to	scroll	the	article	text	to	see	all	of	it.	You	will	add	a	new	view	group	called
+	ScrollView	 	to	the	XML	layout	that	will	make	the	TextView	scrollable.</string>
+</resources>
