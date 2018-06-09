@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCustomerActivity">
+
+
+    <TextView
+        android:id="@+id/textViewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Add Details"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/firstName"
+        android:layout_alignParentEnd="true"
+        android:hint="First Name"
+        android:layout_marginEnd="13dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-37dp"
+        android:layout_marginTop="133dp"
+        android:layout_toStartOf="@+id/textViewDetails"
+        android:text="First Name"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="192dp"
+        android:text="Last Name"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etFirstName"
+        android:layout_marginTop="185dp"
+        android:hint="Last Name"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="76dp"
+        android:onClick="addUser"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/saveBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="225dp"
+        android:text="Contact No"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/contactNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etFirstName"
+        android:layout_alignTop="@+id/contact"
+        android:ems="10"
+        android:hint="Mobile No"
+
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btvViewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/saveBtn"
+        android:layout_marginEnd="31dp"
+        android:onClick="viewdata"
+        android:text="ViewList" />
+
+
+</RelativeLayout>
