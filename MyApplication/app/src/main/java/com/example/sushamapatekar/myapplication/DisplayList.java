@@ -26,7 +26,7 @@ public class DisplayList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_list);
 
-        btnView = (Button) findViewById(R.id.view1);
+        btnView = (Button) findViewById(R.id.viewButton);
         datamodel = new ArrayList<DataModel>();
         recyclerView = (RecyclerView) findViewById(R.id.recycler);
 
