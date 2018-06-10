@@ -16,36 +16,24 @@ import java.util.List;
 
 public class DisplayList extends AppCompatActivity {
 
-   Button btnView;
     List<DataModel> datamodel;
     RecyclerView recyclerView;
-    RecyclerAdapter recycler;
+    RecyclerAdapter recyclerAdapter;
     myDbAdapter myDbdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_list);
 
-        btnView = (Button) findViewById(R.id.viewButton);
-        datamodel = new ArrayList<DataModel>();
         recyclerView = (RecyclerView) findViewById(R.id.recycler);
+        datamodel = new ArrayList<DataModel>();
 
-          btnView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myDbdapter = new myDbAdapter(DisplayList.this);
-                datamodel = myDbdapter.getData();
-                recycler = new RecyclerAdapter(datamodel);
+        myDbdapter = new myDbAdapter(DisplayList.this);
+        datamodel = myDbdapter.getData();
+        recyclerAdapter = new RecyclerAdapter(datamodel);
+        
+        recyclerView.setAdapter(recyclerAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(DisplayList.this));
 
-
-                //Log.e("recycler", "DataModel");
-                Log.e("Logdata",""+datamodel);
-                RecyclerView.LayoutManager reLayoutManager =new LinearLayoutManager(getApplicationContext());
-                recyclerView.setLayoutManager(reLayoutManager);
-                recyclerView.setItemAnimator(new DefaultItemAnimator());
-                recyclerView.setAdapter(recycler);
-
-            }
-        });
     }
 }
